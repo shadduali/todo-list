@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Jumbotron} from 'reactstrap';
 import ToDo from './ToDoComponent'
 
 class Main extends Component {
@@ -10,7 +11,9 @@ class Main extends Component {
     render () {
         return (
             <div>
-                <h1>To-Do List</h1>
+                <Jumbotron>
+                    <h1>To-Do List</h1>
+                </Jumbotron>
                 <div>
                     <ToDo/>
                 </div>

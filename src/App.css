@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+	.modal{
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+	}
+	
+	.modal .modal-body {
+		padding: 15px 15px 80px;
+  }
+	.modal.fade {
+		right: 0;
+	}
+
+/* ----- MODAL STYLE ----- */
+	.modal {
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color: #FAFAFA;
+	}
+
