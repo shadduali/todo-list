@@ -10,11 +10,11 @@ class Main extends Component {
 
     render () {
         return (
-            <div>
+            <div >
                 <Jumbotron>
-                    <h1>To-Do List</h1>
+                    <h1>TasksTo-Do</h1>
                 </Jumbotron>
-                <div>
+                <div className="container">
                     <ToDo/>
                 </div>
             </div>

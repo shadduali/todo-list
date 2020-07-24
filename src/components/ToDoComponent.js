@@ -6,13 +6,14 @@ function AddItem({item,handleInputChange,handleSubmit}){
     return(
         <div>
             <Form onSubmit={handleSubmit}>
-                <FormGroup row>
-                    <Col md={10}>
-                        <Input type="text" id="todoitem" name="todoitem" value={item} placeholder="Add item" onChange={handleInputChange} />
+                <FormGroup className="add-task-form row">
+                    <Col className="col-9" >
+                        <Input type="text" className="input-task" id="todoitem" name="todoitem" value={item} 
+                        placeholder="Add tasks" onChange={handleInputChange} /><i class="fa fa-tasks"></i>
                     </Col>
-                    <Button type="submit" color="primary">
-                            Add
-                    </Button>
+                    <Col className="col-2" >
+                        <Button type="submit" color="primary">Add</Button>
+                    </Col>
                 </FormGroup>
             </Form>
         </div>
@@ -80,7 +81,7 @@ class ToDo extends Component {
             <div> 
                 <div className="container">
                     <div className="row"> 
-                        <div className="col-12 col-md-9">
+                        <div className="col-10 col-md-9">
                             <AddItem item={this.state.item} handleInputChange={this.handleInputChange} handleSubmit={this.handleSubmit}/>
                         </div>
                     </div>
