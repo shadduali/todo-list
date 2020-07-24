@@ -127,6 +127,16 @@ input[type=text]{
   
 }
 
+.task-text-completed{
+  padding: 6px 6px 8px 25px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: rgb(87, 86, 86);
+  text-decoration: line-through;
+}
+
 .modal-style{
   position: fixed;
     margin: auto;
@@ -150,3 +160,21 @@ input[type=text]{
 .modal-style .modal-body{
   padding: 0px 15px 15px 0px;
 }
+
+h4{
+  font-family: Verdana, Geneva, sans-serif;
+  text-align:left;
+  padding:50px 0px 20px 0px;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #262158;
+  color: floralwhite; 
+}
+
+  .container-body{
+  padding-top: 100px;
+  }

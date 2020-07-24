@@ -4,17 +4,13 @@ import ToDo from './ToDoComponent'
 
 class Main extends Component {
 
-    constructor(props){
-        super(props);
-    }
-
     render () {
         return (
             <div >
                 <Jumbotron>
                     <h1>TasksTo-Do</h1>
                 </Jumbotron>
-                <div className="container">
+                <div className="container-body">
                     <ToDo/>
                 </div>
             </div>

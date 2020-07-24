@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, ModalFooter } from 'reactstrap';
-
+    
 export default class ShowItem extends Component {
     
     constructor(props){
@@ -36,7 +36,8 @@ export default class ShowItem extends Component {
     }  
 
     render(){
-        const {items,handleDelete,editItem}=this.props;    
+        const {items,handleDelete,editItem,addCompleted}=this.props;    
+        console.log("showitems"+items.length);
         return(
             <div>
                 <div className="container">
@@ -46,12 +47,13 @@ export default class ShowItem extends Component {
                                 return (
                                     <ul className="list-unstyled">
                                         <li key={item.key}>
-                                            <i class="fa fa-circle-thin" aria-hidden="true"></i>
-                                                <span className="task-text" onClick={() => {
-                                                    this.setState({
-                                                        text:item.text,
-                                                        key:item.key});
-                                                    this.toggleModal()}}>{item.text}</span>
+                                            <i class="fa fa-circle-thin" onClick={(e)=>{addCompleted(e,item.key,item.text)}} aria-hidden="true"></i>
+                                            <span className="task-text" onClick={() => {
+                                                this.setState({
+                                                    text:item.text,
+                                                    key:item.key});
+                                                this.toggleModal()}}>{item.text}
+                                            </span>
                                         </li>
                                     </ul>
                                 );
